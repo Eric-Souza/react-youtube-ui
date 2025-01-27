@@ -1,0 +1,96 @@
+import { StyleSheet } from "react-native";
+
+export const headerStyles = StyleSheet.create({
+  header: {
+    height: 56,
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 16,
+    backgroundColor: "#fff",
+    borderBottomWidth: 1,
+    borderBottomColor: "#e5e5e5",
+    justifyContent: "space-between",
+    width: "100%",
+  },
+  leftSection: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  menuButton: {
+    padding: 8,
+    marginRight: 8,
+  },
+  menuIcon: {
+    fontSize: 24,
+    color: "#606060",
+  },
+  logo: {
+    width: 90,
+    height: 20,
+    resizeMode: "contain",
+  },
+  searchSection: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    maxWidth: 600,
+    marginLeft: 10,
+  },
+  searchBar: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#f1f1f1",
+    borderRadius: 4,
+    height: 40,
+    paddingHorizontal: 12,
+    marginRight: 8,
+  },
+  searchInput: {
+    flex: 1,
+    fontSize: 16,
+    color: "#000",
+  },
+  searchButton: {
+    width: 50,
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f1f1f1",
+    borderLeftWidth: 1,
+    borderLeftColor: "#ddd",
+  },
+  micButton: {
+    width: 40,
+    height: 40,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f8f8f8",
+    borderRadius: 20,
+    marginLeft: 8,
+  },
+  rightSection: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  iconButton: {
+    padding: 8,
+    marginRight: 8,
+  },
+  signInButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 12,
+    height: 32,
+    borderWidth: 1,
+    borderColor: "#065fd4",
+    borderRadius: 4,
+    justifyContent: "center",
+  },
+  signInText: {
+    color: "#065fd4",
+    fontWeight: "600",
+    fontSize: 14,
+  },
+});

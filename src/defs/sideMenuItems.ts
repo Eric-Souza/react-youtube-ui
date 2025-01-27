@@ -1,0 +1,18 @@
+export const sideMenuItems = [
+  { id: "home", icon: "🏠", label: "Home", selected: true },
+  { id: "explore", icon: "🔍", label: "Explore" },
+  { id: "shorts", icon: "⚡", label: "Shorts" },
+  { id: "subscriptions", icon: "📺", label: "Subscriptions" },
+  { separator: true },
+  { id: "library", icon: "📚", label: "Library" },
+  { id: "history", icon: "⏱️", label: "History" },
+  { separator: true },
+  { id: "signIn", label: "Sign in to like videos, comment, and subscribe." },
+  { separator: true },
+  { header: "BEST OF YOUTUBE" },
+  { id: "music", icon: "🎵", label: "Music" },
+  { id: "sports", icon: "⚽", label: "Sports" },
+  { id: "gaming", icon: "🎮", label: "Gaming" },
+  { id: "movies", icon: "🎬", label: "Movies" },
+  { id: "news", icon: "📰", label: "News" },
+];

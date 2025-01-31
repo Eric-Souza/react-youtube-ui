@@ -1,9 +1,9 @@
-import React, { useState, FC } from "react";
+import React, { useState } from "react";
 import { ScrollView, View, Text, Pressable } from "react-native";
 import { categories } from "../../defs/categoriesItems";
 import { categoryStyles } from "./index.styles";
 
-const Categories = (): FC => {
+const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   return (

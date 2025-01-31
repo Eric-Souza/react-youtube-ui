@@ -1,21 +1,30 @@
-import React, { FC, useState } from "react";
+import React, { useState } from "react";
 import { View, Text, Image, Pressable } from "react-native";
 import { createPortal } from "react-dom";
 import { videoCardStyles } from "./index.styles";
 import { decodeHtmlEntities } from "../../utils/formatString";
 import { formatRelativeTime } from "../../utils/formatTime";
 
-const VideoCard = ({
+interface VideoCardProps {
+  thumbnail: string;
+  title: string;
+  channelTitle: string;
+  publishTime: string;
+  views?: string;
+  duration?: string;
+}
+
+const VideoCard: React.FC<VideoCardProps> = ({
   thumbnail,
   title,
   channelTitle,
   publishTime,
   views = "1000", // Since views and duration are not returned, we hardcode them
   duration = "12:34",
-}): FC => {
+}) => {
   const [hovered, setHovered] = useState(false);
   const [showPlaceholder, setShowPlaceholder] = useState(false);
-  const [popupDelay, setPopupDelay] = useState(null);
+  const [popupDelay, setPopupDelay] = useState<NodeJS.Timeout | null>(null);
 
   const [cardPosition, setCardPosition] = useState({
     top: 0,
@@ -49,7 +58,10 @@ const VideoCard = ({
   };
 
   const handleMouseLeave = () => {
-    clearTimeout(popupDelay);
+    if (popupDelay) {
+      clearTimeout(popupDelay);
+    }
+
     setHovered(false);
     setShowPlaceholder(false);
   };

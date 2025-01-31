@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
   ScrollView,
   View,
@@ -11,7 +11,7 @@ import { fetchVideos } from "../../services/videos";
 import { IVideo } from "../../models/IVideo";
 import { videoGridStyles } from "./index.styles";
 
-const VideoGrid = (): FC => {
+const VideoGrid = () => {
   const [videos, setVideos] = useState<IVideo[]>([]);
   const [loading, setLoading] = useState(false);
   const [isFetchingMore, setIsFetchingMore] = useState(false);

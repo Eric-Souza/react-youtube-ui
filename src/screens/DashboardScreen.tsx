@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React from "react";
 import Dashboard from "../components/Dashboard";
 
-const DashboardScreen = (): FC => {
+const DashboardScreen = () => {
   return <Dashboard />;
 };
 

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import { View } from "react-native";
 import { dashboardStyles } from "./index.styles";
 import Header from "../Header";
@@ -6,7 +6,7 @@ import SideMenu from "../SideMenu";
 import VideoGrid from "../VideoGrid";
 import Categories from "../Categories";
 
-const Dashboard = (): FC => {
+const Dashboard = () => {
   return (
     <View style={dashboardStyles.container}>
       <Header />

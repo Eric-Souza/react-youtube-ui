@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React from "react";
 import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import { headerStyles } from "./index.styles";
 
-const Header = (): FC => {
+const Header = () => {
   return (
     <View style={headerStyles.header}>
       <View style={headerStyles.leftSection}>

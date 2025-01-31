@@ -1,9 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { sideMenuStyles } from "./index.styles";
 import { sideMenuItems } from "../../defs/sideMenuItems";
 
-const SideMenu = (): FC => {
+const SideMenu = () => {
   return (
     <View style={sideMenuStyles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>

@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React from "react";
 import DashboardScreen from "./screens/DashboardScreen";
 
-const App: FC = () => {
+const App = () => {
   return <DashboardScreen />;
 };
 

@@ -1,6 +1,12 @@
 import { StyleSheet } from "react-native";
 
 export const videoCardStyles = StyleSheet.create({
+  container: {
+    marginBottom: 10,
+    padding: 8,
+    backgroundColor: "#fff",
+    borderRadius: 8,
+  },
   thumbnailContainer: {
     position: "relative",
     borderRadius: 8,

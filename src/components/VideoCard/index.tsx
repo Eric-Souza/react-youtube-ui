@@ -33,10 +33,8 @@ const VideoCard: React.FC<VideoCardProps> = ({
   });
 
   // Hovering logic
-  const handleMouseEnter = (event: {
-    target: { getBoundingClientRect: () => any };
-  }) => {
-    const rect = event.target.getBoundingClientRect();
+  const handleMouseEnter = (event: React.MouseEvent<HTMLDivElement>) => {
+    const rect = event.currentTarget.getBoundingClientRect();
     const screenWidth = window.innerWidth;
 
     const isRightOverflow = rect.left + 400 > screenWidth;
@@ -67,7 +65,7 @@ const VideoCard: React.FC<VideoCardProps> = ({
   };
 
   return (
-    <View
+    <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={videoCardStyles.container}
@@ -143,7 +141,7 @@ const VideoCard: React.FC<VideoCardProps> = ({
           </View>,
           document.body
         )}
-    </View>
+    </div>
   );
 };
 

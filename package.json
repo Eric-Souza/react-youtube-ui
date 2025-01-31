@@ -15,9 +15,8 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "scripts": {
-      "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start"
-    },
+      "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

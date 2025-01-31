@@ -1,2 +1,3 @@
 # react-youtube-ui
-Created with CodeSandbox
+
+App that mimics Youtube's old UI using React Native Web, TypeScript and CSS.
